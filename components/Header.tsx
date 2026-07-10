@@ -33,7 +33,6 @@ export default function Header() {
       const element = document.getElementById(targetId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
-        window.history.pushState(null, "", hash);
       }
     } else {
       router.push(href);

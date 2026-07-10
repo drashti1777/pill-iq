@@ -1,3 +1,5 @@
+"use client";
+
 import { Zap, ArrowRight, ShieldCheck } from "lucide-react";
 import PhoneMockup from "./PhoneMockup";
 
@@ -11,25 +13,32 @@ const GooglePlayIcon = ({ size = 16, className = "" }: { size?: number; classNam
 );
 
 export default function Hero() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById("how-it-works");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="mx-auto grid max-w-7xl items-center gap-16 px-6 pb-20 pt-4 md:grid-cols-2 md:pt-6">
       <div>
-        <span className="mb-6 inline-flex items-center gap-1.5 rounded-full bg-accent-mint px-3 py-1.5 text-[12.5px] font-medium text-brand-dark">
+        <span className="mb-6 inline-flex items-center gap-1.5 rounded-full bg-accent-mint px-3 py-1.5 text-[12.5px] font-medium text-brand-dark animate-fade-in-up">
           <Zap size={13} />
           AI Medicine Identifier
         </span>
 
-        <h1 className="mb-6 max-w-lg text-[40px] leading-[1.15] tracking-tight text-ink md:text-[44px]">
+        <h1 className="mb-6 max-w-lg text-[40px] leading-[1.15] tracking-tight text-ink md:text-[44px] animate-fade-in-up delay-100">
           Scan any medicine. Know exactly what you&rsquo;re taking.
         </h1>
 
-        <p className="mb-8 max-w-md text-[15.5px] leading-relaxed text-muted">
+        <p className="mb-8 max-w-md text-[15.5px] leading-relaxed text-muted animate-fade-in-up delay-200">
           Point your camera at any packaging, blister pack, or bottle. Our AI
           reads it and explains the uses, dosage, side effects, warnings, and
           storage — in seconds, in plain language.
         </p>
 
-        <div className="mb-10 flex flex-wrap items-center gap-6">
+        <div className="mb-10 flex flex-wrap items-center gap-6 animate-fade-in-up delay-300">
           <a
             href="https://play.google.com/store/apps/details?id=com.midnight.pilliq_app&pcampaignid=web_share"
             target="_blank"
@@ -46,6 +55,7 @@ export default function Hero() {
           </a>
           <a
             href="#how-it-works"
+            onClick={handleScroll}
             className="flex items-center gap-1.5 text-[14.5px] font-medium text-brand-dark"
           >
             See how it works
@@ -53,7 +63,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex flex-wrap items-center gap-8">
+        <div className="flex flex-wrap items-center gap-8 animate-fade-in-up delay-500">
           <div>
             <p className="font-serif text-[22px] text-ink">1,200+</p>
             <p className="text-[12px] text-muted">medicines recognized</p>

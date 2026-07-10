@@ -15,7 +15,7 @@ export default function PhoneMockup() {
 
         <div className="px-5 pb-6 pt-1">
           <div className="mb-4 flex items-center justify-between">
-            <h3 className="font-serif text-[19px] text-ink">Hi, xyz</h3>
+            <h3 className="font-serif text-[19px] text-ink">Hi, Jhon Doe</h3>
             <span className="rounded-full bg-accent-mint px-2.5 py-1 text-[10px] font-medium text-brand-dark">
               Scans 6/100
             </span>

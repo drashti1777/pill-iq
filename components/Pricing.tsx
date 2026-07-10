@@ -39,9 +39,14 @@ export default function Pricing() {
               </li>
             ))}
           </ul>
-          <button className="w-full rounded-full border border-line py-3 text-[14.5px] font-medium text-ink transition-colors hover:bg-bg">
-            Download free
-          </button>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.midnight.pilliq_app&pcampaignid=web_share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full rounded-full border border-line py-3 text-center text-[14.5px] font-medium text-ink transition-colors hover:bg-bg"
+          >
+            Get the App
+          </a>
         </div>
 
         {/* Premium plan */}
@@ -60,9 +65,14 @@ export default function Pricing() {
               </li>
             ))}
           </ul>
-          <button className="w-full rounded-full bg-accent-mint py-3 text-[14.5px] font-medium text-brand-dark transition-transform hover:scale-[1.01]">
-            Start 7-day free trial
-          </button>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.midnight.pilliq_app&pcampaignid=web_share"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full rounded-full bg-accent-mint py-3 text-center text-[14.5px] font-medium text-brand-dark transition-transform hover:scale-[1.01]"
+          >
+            Get the App
+          </a>
         </div>
       </div>
 

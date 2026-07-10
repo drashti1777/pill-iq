@@ -52,7 +52,9 @@ export default function PrivacyPage() {
                 If you have any questions about this privacy policy or our privacy practices, please contact us at:
               </p>
               <p className="font-semibold text-brand">
-                privacy@pilliq.com
+                <a href="mailto:info@themidnight.in" className="hover:underline">
+                  info@themidnight.in
+                </a>
               </p>
             </section>
           </div>
