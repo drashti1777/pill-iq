@@ -24,9 +24,9 @@ export default function TermsPage() {
 
             <section className="space-y-3">
               <h2 className="font-serif text-[22px] text-ink mt-8">2. Medical Disclaimer</h2>
-              <div className="rounded-2xl border border-line bg-accent-mint/30 p-5 font-medium text-brand-dark">
+              <p>
                 Pill IQ is for informational purposes only. The information provided by our application does not constitute professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition or medications. Never disregard professional medical advice or delay in seeking it because of something you have read on Pill IQ.
-              </div>
+              </p>
             </section>
 
             <section className="space-y-3">
